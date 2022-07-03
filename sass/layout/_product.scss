@@ -76,10 +76,16 @@ letter-spacing: 0.03em;
 color: var(--second-title-color);
 }
 
-.conteiner, .examples {
-  width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
+// .conteiner, .examples {
+//   width: 100%;
+//   padding-right: 15px;
+//   padding-left: 15px;
+//   margin: 0 auto;
+   
+//   @media screen and (min-width: 480px) {
+//   width: 480px;
+// }
+//  @media screen and (min-width: 480px) {
+//   width: 480px;
+// }
+//   }
