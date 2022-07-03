@@ -1,0 +1,49 @@
+.footer {
+  background: #2F303A;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border: 1px solid #2196F3;
+}
+
+.position {
+  display: flex;
+  align-items: flex-start;
+ position: relative;
+}
+
+.communications__list {
+padding-top: 0;
+  margin-bottom: 9px;
+  font-family: 'Roboto';
+font-style: normal;
+}
+
+.communications__link {
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+text-decoration: none;
+}
+
+.communications__link--accent {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.communications__link--light {
+  color: #FFFFFF;
+}
+
+.footer-socials {
+ margin-left: 70px;
+}
+
+.footer-socials__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+
