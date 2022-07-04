@@ -488,32 +488,54 @@ textarea {
 }
 
 .hero__overlay {
-  min-width: 1600px;
-  height: 600px;
+  width: 480px;
+  height: 400px;
   margin-right: auto;
   margin-left: auto;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-picture.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media screen and (min-width: 768px) {
+  .hero__overlay {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__overlay {
+    width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-picture.jpg);
+  }
+}
 
 .hero__conteiner {
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__conteiner {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero__title {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
   padding-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--third-title-color);
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .benefits {
