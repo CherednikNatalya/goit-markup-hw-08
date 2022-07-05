@@ -5,17 +5,44 @@
   border: 1px solid #2196F3;
 }
 
+  @include tablet {
+     
+    }
+  @include desktop {
+     
+    }
+
 .position {
   display: flex;
-  align-items: flex-start;
- position: relative;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  
+  
+   @include tablet  {
+     
+    }
+  @include desktop {
+     align-items: flex-start;
+  position: relative;
+    }
+}
+
+.communications_item {
+  margin-bottom: 60px;
 }
 
 .communications__list {
 padding-top: 0;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
   font-family: 'Roboto';
 font-style: normal;
+@include tablet {
+     
+    }
+  @include desktop {
+      margin-bottom: 9px;
+    }
 }
 
 .communications__link {
@@ -34,10 +61,20 @@ text-decoration: none;
 }
 
 .footer-socials {
- margin-left: 70px;
+  text-align: center;
+
+   @include tablet {
+     
+    }
+  @include desktop {
+      margin-left: 70px;
+    }
+
 }
 
+
 .footer-socials__title {
+  margin-top: 0;
   margin-bottom: 20px;
   font-weight: 700;
 font-size: 14px;
@@ -46,4 +83,3 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #FFFFFF;
 }
-
