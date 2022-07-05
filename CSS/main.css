@@ -319,10 +319,39 @@ textarea {
   fill: #FFFFFF;
 }
 
+@media screen and (min-width: 768px) {
+  .subscription {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    margin-left: 151px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .subscription {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     position: absolute;
     right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .subscription_form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscription_form {
+    display: flex;
+    flex-direction: row;
   }
 }
 
@@ -333,6 +362,12 @@ textarea {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FFFFFF;
+  margin-top: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .subscription__title {
+    margin-left: 0;
+  }
 }
 
 .subscription__input {
@@ -350,7 +385,7 @@ textarea {
     width: 358px;
     height: 50px;
     margin-right: 12px;
-    padding-left: 16px;
+    margin-bottom: 0;
   }
 }
 
@@ -1102,6 +1137,13 @@ textarea {
   justify-content: center;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .position {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
 @media screen and (min-width: 1200px) {
   .position {
     align-items: flex-start;
@@ -1109,8 +1151,27 @@ textarea {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .communications {
+    margin-left: 61px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .communications {
+    margin-left: 0;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
 .communications_item {
   margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .communications_item {
+    margin-bottom: 0;
+  }
 }
 
 .communications__list {
@@ -1143,6 +1204,11 @@ textarea {
 .footer-socials {
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .footer-socials {
+    margin-left: 165px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer-socials {
     margin-left: 70px;
@@ -1158,4 +1224,9 @@ textarea {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+@media screen and (min-width: 1200px) {
+  .footer-socials__title {
+    margin-top: 12px;
+  }
 }/*# sourceMappingURL=main.css.map */
