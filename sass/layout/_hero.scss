@@ -7,7 +7,6 @@
   height: 400px;
   margin-right: auto;
   margin-left: auto;
-  
    background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -20,24 +19,65 @@
     width: 100%;
     max-width: 1600px;
   height: 600px;
-   background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-  url(../images/hero-picture.jpg);
-  }
 }
+}
+
 
 .hero__conteiner {
   text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+  url(../images/hero-mob.jpg);
+
+   @include retina {
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+  url(../images/hero-mob-2x.jpg);
+  }
+
+  @include tablet {
+background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+  url(../images/hero-tab.jpg);
+
+  @include retina {
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+  url(../images/hero-tab-2x.jpg);
+  }
+  }
   
   @include desktop {
     padding-top: 200px;
   padding-bottom: 200px;
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+  url(../images/hero-picture.jpg);
+
+   @include retina {
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+  url(../images/hero-picture-2x.jpg);
   }
 }
+
+}
+
+
 
 .hero__title {
   // margin-top: 0;
@@ -56,9 +96,3 @@ color: var(--third-title-color);
 line-height: 1.36;
   }
 }
-
-
-
-
-
-
