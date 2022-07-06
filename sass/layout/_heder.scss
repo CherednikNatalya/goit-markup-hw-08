@@ -110,5 +110,17 @@ letter-spacing: 0.02em;
 }
 
 .header_button {
+  display: block;
+  margin-left: auto;
+  border: none;
+  background-color: #FFFFFF;
+}
+
+.header_icon {
+  width: 24px;
+  height: 16px;
+  justify-content: center ;
+  fill: #212121;
+  fill: currentColor;
   
 }
