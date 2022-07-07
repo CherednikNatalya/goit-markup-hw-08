@@ -11,8 +11,7 @@
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./CSS/styles.css" class="body"/>
-    <link rel="stylesheet" href="./CSS/main.min.css">
+        <link rel="stylesheet" href="./CSS/main.min.css">
   </head>
   <body>
 
@@ -64,11 +63,36 @@
           <li class="product__item">
             <a href="" class="product__link">
               <div class="product__top-text">
-              <img
+                <picture class="card__picture">
+                <source
+                  srcset="
+                  ./images/portfolio1.jpg  1x,
+                    ./images/portfolio1-2x.png 2x
+                    
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio1-tab.jpg  1x,
+                    ./images/portfolio1-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio1-mob.jpg  1x,
+                    ./images/portfolio1-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                 <img
               src="./images/portfolio1.jpg"
               alt=""
-              width="370"
+              width="450"
               height="294"/>
+              </picture>
+
               <p class="product__color-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
             </div>
 
@@ -83,11 +107,36 @@
           <li class="product__item">
             <a href="" class="product__link">
               <div class="product__top-text">
-              <img
+                <picture class="card__picture">
+                <source
+                  srcset="
+                  ./images/portfolio2.jpg  1x,
+                    ./images/portfolio2-2x.png 2x
+                    
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio2-tab.jpg  1x,
+                    ./images/portfolio2-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio2-mob.jpg  1x,
+                    ./images/portfolio2-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
               src="./images/portfolio2.jpg"
               alt="постер"
               width="370"
               height="294"/>
+              </picture>
+              
               <p class="product__color-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
             </div>
             
@@ -103,19 +152,43 @@
           <li class="product__item">
             <a href="" class="product__link">
               <div class="product__top-text">
-              <img
-              src="./images/portfolio2.jpg"
+                <picture class="card__picture">
+                <source
+                  srcset="
+                  ./images/portfolio3.jpg  1x,
+                    ./images/portfolio3-2x.png 2x
+                    
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio3-tab.jpg  1x,
+                    ./images/portfolio3-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio3-mob.jpg  1x,
+                    ./images/portfolio3-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+              src="./images/portfolio3.jpg"
               alt="постер"
               width="370"
               height="294"/>
+              </picture>
+              
               <p class="product__color-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
             </div>
             
               <div class="product__caption">
-                 <h2 class="product__title">
-              Постер<span lang="en">New Orlean vs Golden Star</span>
+                 <h2 class="product__title">Ресторан<span lang="en">Seafood</span>
             </h2>
-            <p class="product__text">Дизайн</p>
+            <p class="product__text">Приложение</p>
               </div>
             </a>
             
@@ -123,11 +196,37 @@
           <li class="product__item">
             <a href="" class="product__link">
               <div class="product__top-text">
-              <img
+                <picture class="card__picture">
+                <source
+                  srcset="
+                  ./images/portfolio4.jpg  1x,
+                    ./images/portfolio4-2x.png 2x
+                    
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio4-tab.jpg  1x,
+                    ./images/portfolio4-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio4-mob.jpg  1x,
+                    ./images/portfolio4-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
               src="./images/portfolio4.jpg"
               alt="наушники"
               width="370"
               height="294"/>
+              </picture>
+                
+              
               <p class="product__color-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
             </div>
             
@@ -141,11 +240,36 @@
           <li class="product__item">
             <a href="" class="product__link">
               <div class="product__top-text">
-              <img
+                <picture class="card__picture">
+                <source
+                  srcset="
+                  ./images/portfolio5.jpg  1x,
+                    ./images/portfolio5-2x.png 2x
+                    
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio5-tab.jpg  1x,
+                    ./images/portfolio5-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio5-mob.jpg  1x,
+                    ./images/portfolio5-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
               src="./images/portfolio5.jpg"
               alt="коробки"
               width="370"
               height="294"/>
+              </picture>
+              
               <p class="product__color-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
             </div>
             
@@ -161,10 +285,35 @@
           <li class="product__item" >
             <a href="" class="product__link">
               <div class="product__top-text">
-              <img src="./images/portfolio6.jpg" 
+                <picture class="card__picture">
+                <source
+                  srcset="
+                  ./images/portfolio6.jpg  1x,
+                    ./images/portfolio6-2x.png 2x
+                    
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio6-tab.jpg  1x,
+                    ./images/portfolio6-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio6-mob.jpg  1x,
+                    ./images/portfolio6-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+               <img src="./images/portfolio6.jpg" 
             alt="ноутбук"
               width="370"
               height="294"/>
+              </picture>
+              
               <p class="product__color-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
             </div>
             
@@ -178,11 +327,36 @@
           <li class="product__item">
             <a href="" class="product__link">
               <div class="product__top-text">
-              <img
+                <picture class="card__picture">
+                <source
+                  srcset="
+                  ./images/portfolio7.jpg  1x,
+                    ./images/portfolio7-2x.png 2x
+                    
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio7-tab.jpg  1x,
+                    ./images/portfolio7-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio7-mob.jpg  1x,
+                    ./images/portfolio7-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+               <img
               src="./images/portfolio7.jpg"
               alt="журнал"
               width="370"
               height="294"/>
+              </picture>
+              
               <p class="product__color-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
             </div>
             
@@ -197,12 +371,36 @@
           <li class="product__item">
             <a href="" class="product__link">
               <div class="product__top-text">
-              <img
+                <picture class="card__picture">
+                <source
+                  srcset="
+                  ./images/portfolio8.jpg  1x,
+                    ./images/portfolio8-2x.png 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio8-tab.jpg  1x,
+                    ./images/portfolio8-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio8-mob.jpg  1x,
+                    ./images/portfolio8-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
               src="./images/portfolio8.jpg"
               alt="проект"
               width="370"
               height="294"
             />
+              </picture>
+              
+             
             <p class="product__color-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
             </div>
             
@@ -216,11 +414,35 @@
           <li class="product__item">
             <a href="" class="product__link">
               <div class="product__top-text">
-              <img
+                <picture class="card__picture">
+                <source
+                  srcset="
+                  ./images/portfolio9.jpg  1x,
+                    ./images/portfolio9-2x.png 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio9-tab.jpg  1x,
+                    ./images/portfolio9-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                  ./images/portfolio9-mob.jpg  1x,
+                    ./images/portfolio9-mob-2x.jpg 2x  
+                  "
+                  media="(min-width: 320px)"
+                />
+               <img
               src="./images/portfolio9.jpg"
               alt="ноутбук"
               width="370"
               height="294"/>
+              </picture>
+              
               <p class="product__color-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
             </div>
             
@@ -242,7 +464,7 @@
     <li class="communications">
         <a href="" class="logo link logo--light" lang="en"><span class="logo__text">Web</span>Studio</a>
 <address class="communications__list"><a href="https://goo.gl/maps/AT3xG3cLioMoSBbq5" target="_blank" class="communications__link link communications__link--light ">г. Киев, пр-т Леси Украинки, 26</a></address>
-<ul>
+<ul class="communications_item">
     <li class="communications__list"><a href="mailto:info@example.com" class="communications__link link communications__link--accent">info@example.com</a></li>
     <li><a href="tel:+380961111111" class="communications__link link communications__link--accent">+38 096 111 11 11</a></li>
 </ul>
@@ -287,7 +509,7 @@
 
     <li class="subscription">
         <p class="subscription__title">Подпишитесь на рассылку</p>
-        <form action="">
+        <form  class="subscription_form" action="">
             <input class="subscription__input subscription__input-text" type="text" name="" id="" placeholder="E-mail">
             <button class="button button--subscription" type="submit">Подписаться
                 <span><svg class="subscription__icon" width="24" height="24">

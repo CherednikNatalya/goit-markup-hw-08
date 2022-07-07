@@ -5,8 +5,13 @@
  background-color: #FFFFFF;
 width: 100vw;
 height: 100vh;
-z-index: 1;
+z-index: 11;
 padding: 48px 40px;
+transform: translate3d(100%);
+}
+
+.mob__menu .is-open {
+  transform: translate3d(-100%);
 }
 
 .mob__button {
