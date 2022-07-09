@@ -1,5 +1,6 @@
 
 .mob__menu {
+  position: relative;
   display: block;
   position: fixed;
   top: 0;
@@ -20,7 +21,6 @@
 
 
 .container--mob {
-  position: relative;
   display: none;
   display: flex;
   flex-direction: column;
@@ -51,12 +51,12 @@ fill: currentColor;
 
 .mob__button {
 position: absolute;
-top: 10;
-left: 0;
+top: 10px;
+right: 15px;
  width: 18px;
   height: 18px;
  border: none;
-    transform: translateX(100%);
+    transform: translateX(-50%);
   fill: currentColor;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 background-color: #fff;
