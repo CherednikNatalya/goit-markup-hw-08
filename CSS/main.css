@@ -76,36 +76,18 @@ body {
   }
 }
 
-.mob__menu {
+.mob-menu {
+  display: block;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #FFFFFF;
+  z-index: 10;
+  background-color: #ffffff;
   width: 100vw;
   height: 100vh;
-  z-index: 11;
   padding: 48px 40px;
-  transform: translate3d(100%);
 }
-
-.mob__menu .is-open {
-  transform: translate3d(-100%);
-}
-
-.mob__button {
-  width: 30px;
-  height: 30px;
-  border: none;
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  background: #FFFFFF;
-}
-.mob__button:hover .modal__icon {
-  fill: var(--accent-color);
-}
-
-.container--mob {
+.mob-menu .container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -113,7 +95,17 @@ body {
   overflow-y: auto;
 }
 
-.mob__icon {
+.container--mob {
+  display: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.mob__icon,
+.mob__button {
   width: 18PX;
   height: 18PX;
   justify-content: center;
@@ -193,11 +185,6 @@ body {
   height: 22px;
   margin-left: 10px;
   background-color: rgba(33, 33, 33, 0.2);
-}
-
-.mob-soc-list {
-  padding-left: 100px;
-  position: relative;
 }
 
 .button-item {
@@ -613,13 +600,25 @@ textarea {
 .nav {
   display: flex;
   align-items: center;
-  position: relative;
+  height: 60px;
+}
+
+.page-header {
+  border: 1px solid #ECECEC;
 }
 
 .menu-container {
   display: none;
-  position: absolute;
-  top: 100%;
+}
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu-container {
+    display: block;
+  }
 }
 
 .text {
@@ -718,18 +717,22 @@ textarea {
 .header__button {
   display: block;
   margin-left: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 15px;
   border: none;
-  background-color: #FFFFFF;
 }
 
 .header__icon {
+  display: block;
+  align-items: center;
   width: 40px;
   height: 40px;
-  padding-top: 12px;
-  justify-content: center;
-  fill: currentColor;
+  padding-top: 5px;
+  border: none;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: #FFFFFF;
 }
 
 .hero {

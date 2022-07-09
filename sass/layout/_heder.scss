@@ -1,14 +1,26 @@
 .nav {
 display: flex;
 align-items: center;
-position: relative;
+height: 60px;
 }
 
+// .mob-position {
+//   position: relative;
+// }
+
+.page-header {
+border: 1px solid  #ECECEC;
+}
 
 .menu-container {
   display: none;
-  position: absolute;
-  top: 100%;
+
+  @include tablet {
+ display: block;
+}
+@include desktop {
+display: block;
+}
 }
 
 
@@ -112,18 +124,24 @@ letter-spacing: 0.02em;
 .header__button {
   display: block;
   margin-left: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 15px;
   border: none;
-  background-color: #FFFFFF;
 }
 
 .header__icon {
-  width: 40px;
-  height: 40px;
-  padding-top: 12px;
-  justify-content: center ;
-  // fill: #212121;
-  fill: currentColor; 
-}
+  display: block;
+align-items: center;
+    width: 40px;
+height: 40px;
+padding-top: 5px;
+border: none;
+position: absolute;
+top: 10px;
+right: 15px;
+background: #FFFFFF;
 
+// &:hover .modal__icon {
+//   fill: var(--accent-color);
+// } 
+}
