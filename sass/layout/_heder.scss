@@ -2,11 +2,15 @@
 display: flex;
 align-items: center;
 height: 60px;
+position: relative;
+ @include tablet {
+ height: 60px;
+ }
+@include desktop {
+height: 80px;
+}
 }
 
-// .mob-position {
-//   position: relative;
-// }
 
 .page-header {
 border: 1px solid  #ECECEC;
@@ -16,10 +20,11 @@ border: 1px solid  #ECECEC;
   display: none;
 
   @include tablet {
- display: block;
+ display: inline-block;
+ 
 }
 @include desktop {
-display: block;
+display: inline-block;
 }
 }
 
@@ -47,7 +52,14 @@ fill: currentColor;
 
 .nav__list {
   display: flex;
-  margin-left: 93px;
+
+  @include tablet {
+margin-left: 88px;
+margin-right: 84px;
+  }
+  @include desktop {
+margin-left: 93px;
+}
 }
 
 .nav__link,
@@ -102,7 +114,14 @@ color: #212121;
 
 .contact__mail {
 color: var(--second-title-color);
-margin-right: 50px;
+
+@include tablet {   
+  margin-right: 0;
+  }
+  @include desktop {
+    margin-right: 50px;
+}
+
 }
 
 .contact__tel {
@@ -111,14 +130,34 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
   color: var(--second-title-color);
- margin-right: 10px;
  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ @include tablet {
+   margin-right: 0;
+  }
+  @include desktop {
+    margin-right: 10px;
+}
 }
 
 .contacts {
-  margin-left: auto;
+    @include tablet {
+      flex-direction: column;
+      flex-wrap: wrap;
+  }
+  @include desktop {
+    margin-left: auto;
   display: flex;
   justify-content: center;
+}
+}
+
+.contact__item {
+    @include tablet {
+      margin-left: auto;
+  }
+  @include desktop {
+}
+
 }
 
 .header__button {
@@ -127,6 +166,13 @@ letter-spacing: 0.02em;
   padding-top: 10px;
   padding-left: 15px;
   border: none;
+
+    @include tablet {
+ display: none;
+}
+@include desktop {
+display: none;
+}
 }
 
 .header__icon {

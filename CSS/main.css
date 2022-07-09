@@ -76,7 +76,7 @@ body {
   }
 }
 
-.mob-menu {
+.mob__menu {
   display: block;
   position: fixed;
   top: 0;
@@ -87,7 +87,7 @@ body {
   height: 100vh;
   padding: 48px 40px;
 }
-.mob-menu .container {
+.mob__menu .container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -601,6 +601,17 @@ textarea {
   display: flex;
   align-items: center;
   height: 60px;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .nav {
+    height: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav {
+    height: 80px;
+  }
 }
 
 .page-header {
@@ -612,12 +623,12 @@ textarea {
 }
 @media screen and (min-width: 768px) {
   .menu-container {
-    display: block;
+    display: inline-block;
   }
 }
 @media screen and (min-width: 1200px) {
   .menu-container {
-    display: block;
+    display: inline-block;
   }
 }
 
@@ -642,7 +653,17 @@ textarea {
 
 .nav__list {
   display: flex;
-  margin-left: 93px;
+}
+@media screen and (min-width: 768px) {
+  .nav__list {
+    margin-left: 88px;
+    margin-right: 84px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav__list {
+    margin-left: 93px;
+  }
 }
 
 .nav__link,
@@ -695,7 +716,16 @@ textarea {
 
 .contact__mail {
   color: var(--second-title-color);
-  margin-right: 50px;
+}
+@media screen and (min-width: 768px) {
+  .contact__mail {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact__mail {
+    margin-right: 50px;
+  }
 }
 
 .contact__tel {
@@ -704,22 +734,54 @@ textarea {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--second-title-color);
-  margin-right: 10px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.contacts {
-  margin-left: auto;
-  display: flex;
-  justify-content: center;
+@media screen and (min-width: 768px) {
+  .contact__tel {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact__tel {
+    margin-right: 10px;
+  }
 }
 
+@media screen and (min-width: 768px) {
+  .contacts {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact__item {
+    margin-left: auto;
+  }
+}
 .header__button {
   display: block;
   margin-left: auto;
   padding-top: 10px;
   padding-left: 15px;
   border: none;
+}
+@media screen and (min-width: 768px) {
+  .header__button {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__button {
+    display: none;
+  }
 }
 
 .header__icon {
