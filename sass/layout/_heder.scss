@@ -3,6 +3,7 @@ display: flex;
 align-items: center;
 height: 60px;
 position: relative;
+width: 100%;
  @include tablet {
  height: 60px;
  }
@@ -25,6 +26,7 @@ border: 1px solid  #ECECEC;
 }
 @include desktop {
 display: flex;
+justify-content: space-between;
 }
 }
 
@@ -55,28 +57,12 @@ fill: currentColor;
 
   @include tablet {
 margin-left: 88px;
-margin-right: 84px;
+margin-right: 80px;
   }
   @include desktop {
 margin-left: 93px;
+margin-right: 0;
 }
-}
-
-.nav__link,
-.contact__mail {
-font-weight: 500;
-letter-spacing: 0.02em;
-color: var(--second-title-color);
-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   @include tablet {
-font-size: 12px;
-line-height: 1.17;
-  }
-  @include desktop {
-font-size: 14px;
-line-height: 1.14;
-}
-  
 }
 
 
@@ -87,7 +73,6 @@ line-height: 1.14;
 .current {
   color: var(--accent-color);
    display: block;
-  padding-bottom: 32px;
   padding-top: 32px;
   position: relative;
   &::after {
@@ -101,6 +86,13 @@ background: #2196F3;
 border-radius: 2px;
 opacity: 0;
 transition: opacity 250ms var(--timing-function);
+}
+
+@include tablet {
+padding-bottom: 28px;
+  }
+  @include desktop {
+padding-bottom: 32px;
 }
 }
 
@@ -119,30 +111,40 @@ color: #212121;
 }
 }
 
-.contact__mail {
-color: var(--second-title-color);
 
-@include tablet {   
-  margin-right: 0;
+
+.contact__mail {
+font-weight: 500;
+letter-spacing: 0.02em;
+color: var(--second-title-color);
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   @include tablet {
+font-size: 12px;
+line-height: 1.17;
+margin-right: 0;
   }
   @include desktop {
-    margin-right: 50px;
-}
-
-}
-
-.contact__tel {
-  font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
+margin-right: 30px;
+} 
+}
+
+
+.contact__tel {
+   font-weight: 500;
 letter-spacing: 0.02em;
   color: var(--second-title-color);
  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  @include tablet {
    margin-right: 0;
+   font-size: 12px;
+line-height: 1.17;
   }
   @include desktop {
-    margin-right: 10px;
+   margin-right: 0;
+    font-size: 14px;
+line-height: 1.14;
 }
 }
 
@@ -150,22 +152,18 @@ letter-spacing: 0.02em;
     @include tablet {
       flex-direction: column;
       flex-wrap: wrap;
+      display: flex;
+      justify-content: center;
   }
   @include desktop {
-    margin-left: auto;
+    flex-direction: row;
+    margin-left: 300px;
   display: flex;
-  justify-content: center;
+  align-content: center;
 }
 }
 
-.contact__item {
-    @include tablet {
-      margin-left: auto;
-  }
-  @include desktop {
-}
 
-}
 
 .header__button {
   display: block;

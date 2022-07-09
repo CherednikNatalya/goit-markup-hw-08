@@ -442,7 +442,6 @@ textarea {
   display: flex;
   justify-content: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-bottom: 60px;
 }
 
 .socials__item {
@@ -614,6 +613,7 @@ textarea {
   align-items: center;
   height: 60px;
   position: relative;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .nav {
@@ -641,6 +641,7 @@ textarea {
 @media screen and (min-width: 1200px) {
   .menu-container {
     display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -669,34 +670,13 @@ textarea {
 @media screen and (min-width: 768px) {
   .nav__list {
     margin-left: 88px;
-    margin-right: 84px;
+    margin-right: 80px;
   }
 }
 @media screen and (min-width: 1200px) {
   .nav__list {
     margin-left: 93px;
-  }
-}
-
-.nav__link,
-.contact__mail {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  color: var(--second-title-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-@media screen and (min-width: 768px) {
-  .nav__link,
-.contact__mail {
-    font-size: 12px;
-    line-height: 1.17;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .nav__link,
-.contact__mail {
-    font-size: 14px;
-    line-height: 1.14;
+    margin-right: 0;
   }
 }
 
@@ -707,7 +687,6 @@ textarea {
 .current {
   color: var(--accent-color);
   display: block;
-  padding-bottom: 32px;
   padding-top: 32px;
   position: relative;
 }
@@ -722,6 +701,16 @@ textarea {
   border-radius: 2px;
   opacity: 0;
   transition: opacity 250ms var(--timing-function);
+}
+@media screen and (min-width: 768px) {
+  .current {
+    padding-bottom: 28px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .current {
+    padding-bottom: 32px;
+  }
 }
 
 .nav__link {
@@ -739,23 +728,28 @@ textarea {
 }
 
 .contact__mail {
+  font-weight: 500;
+  letter-spacing: 0.02em;
   color: var(--second-title-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .contact__mail {
+    font-size: 12px;
+    line-height: 1.17;
     margin-right: 0;
   }
 }
 @media screen and (min-width: 1200px) {
   .contact__mail {
-    margin-right: 50px;
+    font-size: 14px;
+    line-height: 1.14;
+    margin-right: 30px;
   }
 }
 
 .contact__tel {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--second-title-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -763,11 +757,15 @@ textarea {
 @media screen and (min-width: 768px) {
   .contact__tel {
     margin-right: 0;
+    font-size: 12px;
+    line-height: 1.17;
   }
 }
 @media screen and (min-width: 1200px) {
   .contact__tel {
-    margin-right: 10px;
+    margin-right: 0;
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 
@@ -775,21 +773,19 @@ textarea {
   .contacts {
     flex-direction: column;
     flex-wrap: wrap;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .contacts {
-    margin-left: auto;
     display: flex;
     justify-content: center;
   }
 }
-
-@media screen and (min-width: 768px) {
-  .contact__item {
-    margin-left: auto;
+@media screen and (min-width: 1200px) {
+  .contacts {
+    flex-direction: row;
+    margin-left: 300px;
+    display: flex;
+    align-content: center;
   }
 }
+
 .header__button {
   display: block;
   margin-left: auto;
