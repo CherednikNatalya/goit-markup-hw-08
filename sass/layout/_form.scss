@@ -142,10 +142,6 @@ color: rgba(117, 117, 117, 0.5);
  margin-left: -8px;
  padding-left: 24px;
 
- @include tablet {
-  margin-left: 0;
- }
-
  @include desktop {
   margin-left: 13px;
  }
@@ -194,7 +190,6 @@ background-repeat: no-repeat;
 border-radius: 2px;
 }
 }
-
 
 .checkbox__text {
   font-size: 12px;
