@@ -4,12 +4,14 @@ align-items: center;
 height: 60px;
 position: relative;
 width: 100%;
-max-width: 1200px;
+
  @include tablet {
  height: 60px;
+ max-width: 768px;
  }
 @include desktop {
 height: 80px;
+max-width: 1200px;
 }
 }
 
@@ -21,13 +23,14 @@ border: 1px solid  #ECECEC;
 .menu-container {
   display: none;
   width: 100%;
-max-width: 1200px;
+
   @include tablet {
  display: flex;
- 
+
 }
 @include desktop {
 display: flex;
+
 }
 }
 

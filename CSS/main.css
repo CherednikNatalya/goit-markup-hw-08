@@ -614,16 +614,17 @@ textarea {
   height: 60px;
   position: relative;
   width: 100%;
-  max-width: 1200px;
 }
 @media screen and (min-width: 768px) {
   .nav {
     height: 60px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .nav {
     height: 80px;
+    max-width: 1200px;
   }
 }
 
@@ -634,7 +635,6 @@ textarea {
 .menu-container {
   display: none;
   width: 100%;
-  max-width: 1200px;
 }
 @media screen and (min-width: 768px) {
   .menu-container {
