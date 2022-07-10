@@ -19,6 +19,12 @@ img {
   height: auto;
   width: 100%;
 }
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
     
     
     

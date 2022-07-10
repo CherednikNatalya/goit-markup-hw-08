@@ -1,10 +1,10 @@
 
 (() => {
   const refs = {
-    openMenuBtn: document.querySelector('.header__button'),
-    closeMenuBtn: document.querySelector('.mob__button'),
-    menu: document.querySelector('.mob-menu'),
-    body: document.querySelector('body'),
+    openMenuBtn: document.querySelector(".header__button"),
+    closeMenuBtn: document.querySelector(".mob__button"),
+    menu: document.querySelector(".mob__menu"),
+    body: document.querySelector("body"),
   };
 
   refs.openMenuBtn.addEventListener('click', toggleMenu);
