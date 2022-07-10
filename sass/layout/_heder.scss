@@ -4,6 +4,7 @@ align-items: center;
 height: 60px;
 position: relative;
 width: 100%;
+max-width: 1200px;
  @include tablet {
  height: 60px;
  }
@@ -19,14 +20,14 @@ border: 1px solid  #ECECEC;
 
 .menu-container {
   display: none;
-
+  width: 100%;
+max-width: 1200px;
   @include tablet {
  display: flex;
  
 }
 @include desktop {
 display: flex;
-justify-content: space-between;
 }
 }
 
@@ -39,6 +40,13 @@ color: #000000;
 align-items: center;
 margin-right: 10px;
 fill: currentColor;
+
+  @include tablet {
+ margin-right: 8px;
+}
+@include desktop {
+  margin-right: 10px;
+}
 }
 
 
@@ -149,18 +157,23 @@ line-height: 1.14;
 }
 
 .contacts {
+   margin-left: auto;
+   
     @include tablet {
       flex-direction: column;
       flex-wrap: wrap;
       display: flex;
       justify-content: center;
-      margin-left: auto;
-  }
+        }
   @include desktop {
     display: flex;
     flex-direction: row;
       align-content: center;
-  margin-left: auto;
+    // justify-content: flex-end;
+
+    // flex-wrap: nowrap;
+    // align-items: center;
+   
 }
 }
 

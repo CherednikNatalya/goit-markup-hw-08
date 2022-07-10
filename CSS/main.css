@@ -614,6 +614,7 @@ textarea {
   height: 60px;
   position: relative;
   width: 100%;
+  max-width: 1200px;
 }
 @media screen and (min-width: 768px) {
   .nav {
@@ -632,6 +633,8 @@ textarea {
 
 .menu-container {
   display: none;
+  width: 100%;
+  max-width: 1200px;
 }
 @media screen and (min-width: 768px) {
   .menu-container {
@@ -641,7 +644,6 @@ textarea {
 @media screen and (min-width: 1200px) {
   .menu-container {
     display: flex;
-    justify-content: space-between;
   }
 }
 
@@ -653,6 +655,16 @@ textarea {
   align-items: center;
   margin-right: 10px;
   fill: currentColor;
+}
+@media screen and (min-width: 768px) {
+  .contact__icon {
+    margin-right: 8px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact__icon {
+    margin-right: 10px;
+  }
 }
 
 .nav__link:hover,
@@ -769,13 +781,15 @@ textarea {
   }
 }
 
+.contacts {
+  margin-left: auto;
+}
 @media screen and (min-width: 768px) {
   .contacts {
     flex-direction: column;
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
-    margin-left: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -783,7 +797,6 @@ textarea {
     display: flex;
     flex-direction: row;
     align-content: center;
-    margin-left: auto;
   }
 }
 
@@ -825,15 +838,14 @@ textarea {
 .hero__overlay {
   width: 480px;
   height: 400px;
-  margin-right: auto;
-  margin-left: auto;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 @media screen and (min-width: 768px) {
   .hero__overlay {
-    width: 768px;
+    width: 100%;
+    max-width: 900px;
   }
 }
 @media screen and (min-width: 1200px) {
