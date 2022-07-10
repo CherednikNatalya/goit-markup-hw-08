@@ -704,7 +704,7 @@ textarea {
 }
 @media screen and (min-width: 768px) {
   .current {
-    padding-bottom: 28px;
+    padding-bottom: 20px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -775,14 +775,15 @@ textarea {
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
+    margin-left: auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .contacts {
-    flex-direction: row;
-    margin-left: 300px;
     display: flex;
+    flex-direction: row;
     align-content: center;
+    margin-left: auto;
   }
 }
 

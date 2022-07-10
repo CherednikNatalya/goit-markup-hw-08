@@ -89,7 +89,7 @@ transition: opacity 250ms var(--timing-function);
 }
 
 @include tablet {
-padding-bottom: 28px;
+padding-bottom: 20px;
   }
   @include desktop {
 padding-bottom: 32px;
@@ -154,12 +154,13 @@ line-height: 1.14;
       flex-wrap: wrap;
       display: flex;
       justify-content: center;
+      margin-left: auto;
   }
   @include desktop {
+    display: flex;
     flex-direction: row;
-    margin-left: 300px;
-  display: flex;
-  align-content: center;
+      align-content: center;
+  margin-left: auto;
 }
 }
 
