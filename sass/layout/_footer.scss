@@ -70,12 +70,14 @@ text-decoration: none;
 
 .footer-socials {
   text-align: center;
+  margin-bottom: 60px;
 
    @include tablet {
      margin-left: 165px;
     }
   @include desktop {
       margin-left: 70px;
+      margin-bottom: 0;
     }
 }
 
@@ -91,5 +93,7 @@ color: #FFFFFF;
 
 @include desktop {
 margin-top: 12px;
+display: flex;
+
 }
 }
