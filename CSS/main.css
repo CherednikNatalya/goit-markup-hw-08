@@ -968,7 +968,6 @@ textarea {
   align-items: center;
   justify-content: center;
   height: 120px;
-  width: 450px;
   background-color: #F5F4FA;
   margin-bottom: 30px;
   margin-top: 0;
@@ -1007,7 +1006,6 @@ textarea {
 }
 
 .benefits__text {
-  width: 450px;
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 400;
